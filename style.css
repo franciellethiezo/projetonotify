@@ -1,0 +1,208 @@
+body{
+    background-color: green;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'section section section section'
+                         'second second second second'
+                         'third third third third'
+                         'footer footer footer footer';
+    grid-template-rows: 80vh 100vh 50vh 60vh 20vh;
+	grid-template-columns: 24.5vw 24.5vw 24.5vw 26vw;        
+}
+
+header{
+	grid-area: header;
+	display: flex;
+	background-color: white;
+	font-family: 'Pacifico', cursive;
+}
+h1{
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 35pt;
+}
+.ponto{
+	padding: 1px;
+	color: green;
+}
+h2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: white;
+}
+
+.headertext{
+	display: flex;
+	justify-content: space-between;
+	text-align: justify;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(0%, -350%);
+}
+
+/* .appicon{
+    display: flex;
+    justify-content: space-between;
+    width: 26px;
+    height: 26px;
+} */
+
+.celular{
+	width: 28%;
+	height: 70%;
+	position: absolute;
+	top: 45%;
+	left: 65%;
+	transform: translate(-30%, -46.9%);
+} 
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+
+.ios{
+    background-image: url(img/icone-ios.png);
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top:44%;
+    left:21%;
+}
+
+.android{
+    background-image: url(img/icone-android.png);
+    width: 26px;
+    height:26px;
+    position:absolute;
+    top:44%;
+    left:25%;
+}
+
+.windows{
+    background-image: url(img/icone-windows.png);
+    width: 26px;
+    height:26px;
+    position: absolute;
+    top:44%;
+    left:29%;
+}
+
+.section img{
+	display: flex;
+	justify-content: flex-end;
+}
+.section div{
+	display: flex;
+	flex-direction: column;
+	
+}
+section{
+    grid-area: section;
+	background-color:white;
+	display: flex;	
+	align-items: center;
+
+}
+
+.ah{
+    display: flex;
+	justify-content: flex-end;
+	text-align: center;
+    width: 50px;
+}
+.ph{
+    display: flex;
+	justify-content: flex-end;
+	text-align: center;
+	flex-direction: column;
+    width: 400px;
+}
+
+
+.iconsist{
+    border-image-outset: 50px;
+    background-color: aqua;
+}
+.icongreen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+}
+
+section p{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.second{
+	grid-area: second;
+    background-color: lightgrey;
+}
+
+.video{
+    display: flex;
+    flex-direction: row;
+	justify-content: flex-end;
+	width: 200px;
+    height:  200px;
+}
+.second input{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: green;
+	
+}
+
+.botao2{
+	display: flex;
+	flex-direction: row;
+	padding: 50px;
+} 
+.third{
+   grid-area: third;
+   display: flex;
+   flex-direction:column;
+   justify-content: space-between;
+   align-items: center;
+   background-color: white;
+
+}
+
+.third p{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: lightgray;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+    
+}
+
+
+
+
+
+
+
+
+
